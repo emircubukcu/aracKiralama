@@ -32,7 +32,7 @@
         <p>Merhaba <?php echo $_SESSION['username'] ?><br />Araçlarım sayfanıza hoş geldiniz.</p>
         <?php 
         echo "<table border=1>";
-        echo "<tr><th>İşlem No</th><th>AracId</th><th>Kiralayan</th><th></th></tr>";
+        echo "<tr><th>İşlem No</th><th>Arac Adı</th><th>Kiralayan</th><th></th></tr>";
     
         while($gelen=mysqli_fetch_array($cevap)){
         echo "<tr><td>".$gelen['islem_id']. "</td>";
